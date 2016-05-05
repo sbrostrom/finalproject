@@ -13,6 +13,7 @@
 	var irEnd = "Drop the r and add an s";
   var reEnd = "Drop the re";
   var verbEnd = ""; 
+  var pronoun = "";
   
   // Get input from the user
   input = prompt("Please enter the verb you want conjugated");
@@ -20,7 +21,12 @@
   
   // Determines the the ending of the verb
   if (verbEnd === "er") {
-    document.write(erEnd);
+    pronoun = prompt("Is there a pronoun?");
+    if (pronoun === "yes") {
+      document.write(pronoun)
+    } else {
+      
+    }
     
   } else if (verbEnd === "ir") {
     document.write(irEnd + input + "\n");
