@@ -1,44 +1,27 @@
 <!DOCTYPE html>
 <html lang = "en-US">
   <head>
+    <div class="gradient">
     <meta charset = "utf-8">
     <title>final project</title>
+    <link rel="stylesheet" href="styles.css">
+    <h1>French verb conjugator</h1>
   </head>
   <body>
-  
-  <script>
-	// Variables declarations
-	var input = "";
-	var erEnd = "Drop the r";
-	var irEnd = "Drop the r and add an s";
-  var reEnd = "Drop the re";
-  var verbEnd = ""; 
-  var pronoun = "";
-  
-  // Get input from the user
-  input = prompt("Please enter the verb you want conjugated");
-  verbEnd = prompt("Please enter the verb ending. Examples are 'er', 'ir', and 're'.");
-  
-  // Determines the the ending of the verb
-  if (verbEnd === "er") {
-    pronoun = prompt("Is there a pronoun? If there is please type it");
-    if (pronoun === "ju") {
-      document.write(pronoun + "\n" + input + "\n" + erEnd);
-    } else {
-      
-    }
+    <p>If you do not know what a verb stem is please refer to the dropdown list</p>
+    <p>The endings of example verbs have been provided for you in the dropdown list</p>
+    <p>As well as the gender. So if you are unsure what to put in the prompt. Please view the dropdownlist and refresh the page to fill in the prompts</p>
+    <br></br>
     
-  } else if (verbEnd === "ir") {
-    document.write(irEnd + input + "\n");
-  } else if (verbEnd === "re"){
-    document.write(reEnd + input + "\n");
-  } else {
-    document.write("Please enter a verb ending");
-  }
-  
-  
-	
-  </script>
+  <select name="French verb stems">
+    <option value="Donne">Male.Donne. er-ending</option>
+    <option value="Chois">Male.Chois. ir-ending</option>
+    <option value="Parle">Female.Parle. re-ending</option>
+    <option value="Descend">Female.Descend. re-ending</option>
+    <option value="Perd">Male.Perd. re-ending</option>
+    <option value="Vend">Female.Vend. re-ending</option>
+  </select>
+  <script src="js/frenchverbs.js"></script>
   
   </body>
 </html>
